@@ -10,6 +10,7 @@ h1{
     color: #D42A2A;
     font-size: 100;
     margin: 0;
+    text-align: center;
 }
 
 h2{
@@ -18,6 +19,7 @@ h2{
     font-style: normal;
     font-size: 50;
     margin: 0;
+    text-align: center;
 }
 
 p{
@@ -26,6 +28,7 @@ p{
     font-style: normal;
     color: white;
     font-size: 25;
+    text-align: center;
 }
 
 a{
@@ -33,4 +36,13 @@ a{
     font-weight: 400;
     font-style: normal;
     color: #D42A2A;
+    text-align: center;
 }
+
+.center-text {
+    text-align: center;
+  }
+
+a.center-text {
+    display: block;
+  }

@@ -1,8 +1,16 @@
+@font-face {
+    font-family: DoubleBass;
+    src: url(DoubleBass-Regular-trial.ttf);
+}
+
 body{
     background-color: #62C1E3;
     position:fixed;
     bottom:0px;
     width:100%;
+    font-family: "doublebass", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h1{
