@@ -1,0 +1,12 @@
+@font-face {
+    font-family: DoubleBass;
+    src: url(DoubleBass-Regular-trial.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
