@@ -3,6 +3,11 @@
     src: url(DoubleBass-Regular-trial.ttf);
 }
 
+canvas{
+    z-index: -1;
+    margin: 0;
+}
+
 body{
     background-color: #62C1E3;
     position:fixed;
@@ -26,7 +31,12 @@ p{
 }
 
 a{
+    z-index: 1;
     font-family: "doublebass", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    font-size: 200%;
+    justify-content: space-around;
+    color: #D42A2A;
 }
