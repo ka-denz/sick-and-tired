@@ -1,4 +1,5 @@
 let positions = [];
+let song;
 
 function preload() {
   font = loadFont("DoubleBass-Regular-trial.ttf");
@@ -10,6 +11,7 @@ function preload() {
 
 function setup() {
    createCanvas(windowWidth, windowHeight);
+  song = createAudio('itry.mp3');
   
 }
 
@@ -20,6 +22,7 @@ function draw() {
     image(img1, 0, 0, windowWidth, windowHeight);
     image(img2, 0, 0, windowWidth, windowHeight+100);
     image(words, 0, 0, windowWidth, windowHeight);
+    song.play();
   }
   else{
     image(img1, 0, 0, windowWidth, windowHeight);

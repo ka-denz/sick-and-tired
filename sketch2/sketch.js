@@ -4,6 +4,7 @@ let buttonOpacities = [];
 let fade = [];
 let buttonWidth = 115;
 let buttonHeight = 70; 
+let song;
 
 function preload() {
   font = loadFont("DoubleBass-Regular-trial.ttf");
@@ -12,6 +13,8 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  song = createAudio('tired.mp3');
+
 
   let spacing = windowWidth / (words.length + 1);
   for (let i = 0; i < words.length; i++) {
@@ -20,6 +23,8 @@ function setup() {
     positions.push({x: x, y: y});
     buttonOpacities.push(255); 
     fade.push(false);
+    
+  
   }
 }
 
@@ -31,6 +36,9 @@ function draw() {
   textAlign(CENTER, CENTER);
   textSize(50);
   fill("#FFD323");
+  
+  
+  
 
   for (let i = 0; i < words.length; i++) {
     text(words[i], positions[i].x, positions[i].y);
@@ -63,7 +71,7 @@ function mousePressed() {
     ) {
       fade[i] = true;
     }
-  }
+  } song.play();
 }
 
 function windowResized() {

@@ -1,4 +1,5 @@
 let slidex;
+let song;
 
 function preload() {
   font = loadFont("DoubleBass-Regular-trial.ttf");
@@ -8,6 +9,7 @@ function preload() {
 
 function setup() {
    createCanvas(windowWidth, windowHeight);
+  song = createAudio('sick1.mp3');
 }
 
 function draw() {
@@ -25,6 +27,7 @@ function draw() {
     fill("#D42A2A");
     text("I'm so sick of being tired", slidex+300,475, 1200, 600); 
     //audio would play here
+    song.play();
   }
   
   else{

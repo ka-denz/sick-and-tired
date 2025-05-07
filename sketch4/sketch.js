@@ -1,7 +1,7 @@
 
 //Maggie Galletti
 //credit: SuperHi
-
+let song;
 var font;
 var points;
 var nl = 0.30;
@@ -14,12 +14,15 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER, CENTER); 
+  song = createAudio('tired2.mp3');
+  song.play()
 
   points = font.textToPoints("I'm so tired of being sick", 180, 330, 125, {
     sampleFactor: 0.1,
     simplifyThreshold: 0,
   });
 }
+
 
 function draw() {
   background("#62C1E3");
